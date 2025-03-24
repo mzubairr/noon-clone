@@ -14,7 +14,7 @@ const Navbar = () => {
               />
             </a>
 
-            <div className="hidden md:flex items-center gap-2 font-medium text-gray-800 cursor-pointer">
+            <div className="hidden md:flex items-center gap-2 font-medium text-gray-800 ">
               <img
                 src="https://f.nooncdn.com/s/app/com/common/images/flags/ae.svg"
                 alt="country image"
@@ -36,9 +36,9 @@ const Navbar = () => {
           </form>
 
           <div className="hidden md:flex gap-[1.4rem] items-center">
-            <div className="language cursor-pointer">العربية</div>
+            <div className="language ">العربية</div>
             <div className="h-6 w-[0.5px] bg-[#a7a2a2]"></div>
-            <div className="signin cursor-pointer">
+            <div className="signin ">
               <p className="font-medium tracking-wide">
                 Log in
                 <i className="fa-regular text-[0.8rem] fa-user text-[#7e7878]"></i>
@@ -46,17 +46,17 @@ const Navbar = () => {
             </div>
             <div className="h-6 w-[0.5px] bg-[#a7a2a2]"></div>
             <div className="flex gap-8 items-center text-lg">
-              <div className="heart cursor-pointer">
+              <div className="heart ">
                 <i className="fa-regular fa-heart"></i>
               </div>
-              <div className="cart cursor-pointer">
+              <div className="cart ">
                 <i className="fa-solid fa-cart-shopping"></i>
               </div>
             </div>
           </div>
 
           <div className="md:hidden">
-            <button className="text-2xl cursor-pointer">
+            <button className="text-2xl ">
               <i className="fa fa-bars text-[#2f2e2e]"></i>
             </button>
           </div>
@@ -65,24 +65,41 @@ const Navbar = () => {
         {/* Nav Section */}
         <nav className="shadow-sm bg-white">
           <div className="flex items-center md:py-2 py-1 max-w-[90%] mx-auto overflow-hidden">
-            <div className="flex w-full items-center justify-between text-[1.30vw] md:text-[1vw] font-medium min-w-0">
-              <a href="#" className="cursor-pointer truncate flex-shrink">Electronics</a>
-              <a href="#" className="cursor-pointer truncate flex-shrink">Men's Fashion</a>
-              <a href="#" className="cursor-pointer truncate flex-shrink">Women's Fashion</a>
-              <a href="#" className="cursor-pointer truncate flex-shrink">Kids' Fashion</a>
-              <a href="#" className="cursor-pointer truncate flex-shrink">Home & Kitchen</a>
-              <a href="#" className="cursor-pointer truncate flex-shrink">Beauty & Fragrance</a>
-              <a href="#" className="cursor-pointer truncate flex-shrink">Baby</a>
-              <a href="#" className="cursor-pointer truncate flex-shrink">Toys</a>
-              <a href="#" className="cursor-pointer truncate flex-shrink">Sports & Outdoors</a>
-              <button className="border cursor-pointer p-0.5 md:p-1 rounded whitespace-nowrap flex-shrink-0">
+            <div className="flex flex-wrap w-full items-center justify-center gap-1 lg:justify-between font-medium min-w-0">
+              <a href="#" className=" truncate flex-shrink">
+                Electronics
+              </a>
+              <a href="#" className=" truncate flex-shrink">
+                Men's Fashion
+              </a>
+              <a href="#" className=" truncate flex-shrink">
+                Women's Fashion
+              </a>
+              <a href="#" className=" truncate flex-shrink">
+                Kids' Fashion
+              </a>
+              <a href="#" className=" truncate flex-shrink">
+                Home & Kitchen
+              </a>
+              <a href="#" className=" truncate flex-shrink">
+                Beauty & Fragrance
+              </a>
+              <a href="#" className=" truncate flex-shrink">
+                Baby
+              </a>
+              <a href="#" className=" truncate flex-shrink">
+                Toys
+              </a>
+              <a href="#" className=" truncate flex-shrink">
+                Sports & Outdoors
+              </a>
+              <button className="border-2 border-red-400 p-0.5 md:p-1 rounded whitespace-nowrap flex-shrink-0">
                 noon Free Delivery
               </button>
             </div>
           </div>
         </nav>
       </header>
-
     </>
   );
 };
